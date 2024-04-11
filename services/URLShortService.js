@@ -29,10 +29,6 @@ async function createShortUrl(url) {
 async function getShortUrlByHash(hash) {
     const data = await urlShortModel.findOne({ hash });
 
-    if (data.$isEmpty) {
-        return null;
-    }
-
     return data.toObject();
 }
 

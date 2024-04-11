@@ -10,11 +10,6 @@ const urlShortSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
-    hits: {
-        type: Number,
-        required: true,
-        default: 0,
-    },
 }, {
     timestamps: true,
     autoCreate: true,
