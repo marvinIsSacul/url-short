@@ -5,7 +5,7 @@
 
 To get started with this application, follow these steps:
 
-1. Run the `docker-compose.yml` file to start the MongoDB service:
+1. Run the `docker-compose.yml` file to start the MongoDB service.
 
 2. Install dependencies:
 
@@ -20,6 +20,12 @@ To get started with this application, follow these steps:
    ```
 
    The server will start running on port 5000 by default.
+
+4. Run tests:
+
+   ```bash
+   npm run test
+   ```
 
 ## Endpoints
 
@@ -83,3 +89,4 @@ This URL shortening service exposes the following endpoints:
 - Express.js
 - MongoDB
 - Docker
+- Jest

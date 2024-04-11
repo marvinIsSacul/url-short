@@ -1,11 +1,10 @@
 const shortid = require('shortid');
-const urlShortModel = require('../schemas/urlShort');
 
 /**
  * Stores a new short URL
  * @param {string} url 
  */
-async function createShortUrl(url) {
+async function createShortUrl(urlShortModel, url) {
     const hash = shortid.generate();
 
     const res = await urlShortModel.create({
@@ -26,7 +25,7 @@ async function createShortUrl(url) {
  * @param {string} hash 
  * @returns 
  */
-async function getShortUrlByHash(hash) {
+async function getShortUrlByHash(urlShortModel, hash) {
     const data = await urlShortModel.findOne({ hash });
 
     return data.toObject();
