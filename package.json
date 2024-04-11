@@ -1,0 +1,23 @@
+{
+  "name": "url-short",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongoose": "^8.3.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.1.0",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
